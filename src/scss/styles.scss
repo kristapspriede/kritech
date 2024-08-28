@@ -1,0 +1,24 @@
+// 1. Import Bootstrap functions first
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/variables-dark";
+
+// Bootstrap overrides
+
+// Custom colors
+
+$custom-colors: (
+  "main": #2b3a42
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+$navbar-light-toggler-icon-bg: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='#fff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+$navbar-light-toggler-border-color: #fff;
+$navbar-toggler-focus-width: 0;
+
+// 3. Import Bootstrap variables, mixins, and main styles
+
+@import "~bootstrap/scss/maps";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/bootstrap";
